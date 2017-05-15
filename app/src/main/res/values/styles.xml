@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Title style-->
+    <style name="Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/TitlePadding</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/TitleTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
+
+    <!--Separators style-->
+    <style name="Separators">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/SeparatorLayout_height</item>
+        <item name="android:layout_marginLeft">@dimen/SeparatorLayout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/SeparatorLayout_marginRight</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <!--Question style-->
+    <style name="Question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/QuestionLayout_height</item>
+        <item name="android:layout_weight">@integer/QuestionLayout_weight</item>
+        <item name="android:paddingLeft">@dimen/QuestionPaddingLeft</item>
+        <item name="android:paddingTop">@dimen/QuestionPaddingTop</item>
+        <item name="android:textSize">@dimen/QuestionTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--Answer layout style-->
+    <style name="AnswerLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/AnswerLayout_height</item>
+        <item name="android:layout_weight">@integer/AnswerLayout_weight</item>
+    </style>
+
+    <!--Radio group style-->
+    <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/RadioGroupPadding</item>
+    </style>
+
+    <!--Radio button style-->
+    <style name="RadioButton">
+        <item name="android:layout_width">@dimen/RadioLayout_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">@integer/RadioLayout_weight</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Title dimensions-->
+    <dimen name="TitlePadding">4dp</dimen>
+    <dimen name="TitleTextSize">28sp</dimen>
+
+    <!--Scroll view dimens-->
+    <dimen name="ScrollHeight">0dp</dimen>
+    <integer name="ScrollWeight">10</integer>
+
+    <!--Separators dimensions-->
+    <dimen name="SeparatorLayout_height">1dp</dimen>
+    <dimen name="SeparatorLayout_marginLeft">8dp</dimen>
+    <dimen name="SeparatorLayout_marginRight">8dp</dimen>
+
+    <!--Question dimens-->
+    <dimen name="QuestionLayout_height">0dp</dimen>
+    <integer name="QuestionLayout_weight">1</integer>
+    <dimen name="QuestionPaddingLeft">10dp</dimen>
+    <dimen name="QuestionPaddingTop">10dp</dimen>
+    <dimen name="QuestionTextSize">16sp</dimen>
+
+    <!--Answer layout dimensions-->
+    <dimen name="AnswerLayout_height">0dp</dimen>
+    <integer name="AnswerLayout_weight">1</integer>
+
+    <!--Radio group padding dimensions-->
+    <dimen name="RadioGroupPadding">4dp</dimen>
+
+    <!--Radio buttons dimensions-->
+    <dimen name="RadioLayout_width">0dp</dimen>
+    <integer name="RadioLayout_weight">1</integer>
+    <dimen name="RadioTextSize">12sp</dimen>
+
+    <!--Submit button dimensions-->
+    <dimen name="ButtonHeight">0dp</dimen>
+    <integer name="ButtonWeight">1</integer>
+
+</resources>
