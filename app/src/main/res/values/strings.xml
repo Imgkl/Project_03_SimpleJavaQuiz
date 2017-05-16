@@ -28,4 +28,11 @@
 
     <!--Check button-->
     <string name="Check">Submit Answers</string>
+
+    <!--Toast after answers submission-->
+    <string name="no_of_questions">/5 !</string>
+    <string name="answers_correctAll">Congratulations</string>
+    <string name="answers_correctMoreThanHalf">Well done! You scored: </string>
+    <string name="answers_correctLessThanHalf">Try again: </string>
+
 </resources>
