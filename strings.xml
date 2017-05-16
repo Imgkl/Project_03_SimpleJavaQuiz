@@ -1,0 +1,38 @@
+<resources>
+    <!--App name-->
+    <string name="app_name">Simple Java Quiz</string>
+
+    <!--Questions-->
+    <string name="QuestionOne">1. In every Java program there must be…</string>
+    <string name="QuestionTwo">2. a &amp;&amp; b is true if either a or b is true</string>
+    <string name="QuestionThree">3. a &amp;&amp; b is false if both a and b are true</string>
+    <string name="QuestionFour">4. (a || b ) &amp;&amp; c is true if c is true and either a or b is true</string>
+    <string name="QuestionFive">5. Complete the code to declare a variable: _ x = 4;</string>
+
+    <!--Answers-->
+    <string name="OneA">a method called main</string>
+    <string name="OneB">two variables</string>
+    <string name="OneC">int variables</string>
+
+    <string name="TwoA">True</string>
+    <string name="TwoB">False</string>
+
+    <string name="ThreeA">False</string>
+    <string name="ThreeB">True</string>
+    <string name="ThreeC">Chuck Norris</string>
+
+    <string name="FourA">True</string>
+    <string name="FourB">False</string>
+
+    <string name="Five">Enter Answer Here</string>
+
+    <!--Check button-->
+    <string name="Check">Submit Answers</string>
+
+    <!--Toast after answers submission-->
+    <string name="no_of_questions">/5 !</string>
+    <string name="answers_correctAll">Congratulations</string>
+    <string name="answers_correctMoreThanHalf">Well done! You scored: </string>
+    <string name="answers_correctLessThanHalf">Try again: </string>
+
+</resources>
