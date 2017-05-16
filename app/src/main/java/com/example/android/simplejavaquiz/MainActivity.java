@@ -2,6 +2,7 @@ package com.example.android.simplejavaquiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton ans4;
     private EditText ans5;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void answerChecker(View view) {
 
-        int correct = 0;
+        String noOfQuestions = getString(R.string.no_of_questions);
+        String correctAll = getString(R.string.answers_correctAll);
+        String correctMoreThanHalf = getString(R.string.answers_correctMoreThanHalf);
+        String correctLessThanHalf = getString(R.string.answers_correctLessThanHalf);
+        int correctAnswers = 0;
 
-        //Check for the correct answers
+        //Check for the correctAnswers answers
         boolean answer1 = ans1.isChecked();
         boolean answer2 = ans2.isChecked();
         boolean answer3a = ans3a.isChecked();
@@ -48,33 +54,37 @@ public class MainActivity extends AppCompatActivity {
         String answer5 = ans5.getText().toString();
 
         if (answer1) {
-            correct += 1;
+            correctAnswers += 1;
         }
 
         if (answer2) {
-            correct += 1;
+            correctAnswers += 1;
         }
 
         if (answer3b && answer3c && !answer3a) {
-            correct += 1;
+            correctAnswers += 1;
         }
 
         if (answer4) {
-            correct += 1;
+            correctAnswers += 1;
         }
 
-        if (answer5.equals(ANSWER_5)) {
-            correct += 1;
+        if (answer5.trim().equals(ANSWER_5)) {
+            correctAnswers += 1;
         }
 
-        if (correct == 5) {
-            Toast.makeText(this, "Congratulations " + correct + "/5 !", Toast.LENGTH_SHORT).show();
+        if (correctAnswers == 5) {
+            displayToast(correctAll + correctAnswers + noOfQuestions);
 
-        } else if (correct >= 3) {
-            Toast.makeText(this, "Well done you scored: " + correct + "/5", Toast.LENGTH_SHORT).show();
+        } else if (correctAnswers >= 3) {
+            displayToast(correctMoreThanHalf + correctAnswers + noOfQuestions);
 
         } else {
-            Toast.makeText(this, "Try again: " + correct + "/5", Toast.LENGTH_SHORT).show();
+            displayToast(correctLessThanHalf + correctAnswers + noOfQuestions);
         }
+    }
+
+    private void displayToast(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
