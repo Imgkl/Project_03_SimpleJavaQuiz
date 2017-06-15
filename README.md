@@ -15,8 +15,6 @@ The goal is to create an <b>educational app</b> that quizzes a user about a cert
 <br>
 <li><b>App includes a button for the user to submit their answers and receive a score.</b></li>
 <br>
-<li><b>The layout contains a ‘reset’ button.</b></li>
-<br>
 <li><b>The code adheres to all of the following best practices:</b>
   <ul><li>Text sizes are defined in sp</li>
   <li>Lengths are defined in dp</li>
